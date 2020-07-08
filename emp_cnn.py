@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.io as sio
 
-DataSetName = 'KSC'  # Indianpines  Salinas  PaviaU  KSC
-train_num = 50.0
+DataSetName = 'Indianpines'  # Indianpines  Salinas  PaviaU  KSC
+train_num = 100.0
 
 # 根据参数载入数据
 if DataSetName == "Indianpines":
