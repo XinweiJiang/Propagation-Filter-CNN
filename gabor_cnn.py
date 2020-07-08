@@ -22,7 +22,7 @@ KTF.set_session(session)
 np.set_printoptions(threshold=np.inf)
 
 now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
-DataSetName = 'KSC'  # Indianpines  Salinas  PaviaU  KSC
+DataSetName = 'Indianpines'  # Indianpines  Salinas  PaviaU  KSC
 traing_num = 400.0
 save_name = DataSetName + now
 
