@@ -5,6 +5,7 @@ Adding pf-cnn， cnn， pca-cnn， gabor-cnn， emp-cnn code (all the cnns have 
 
 
 The data sets and  number of training samples can be selected within the code, such as:
+
 DataSetName = 'Indianpines'  # Indianpines  Salinas  PaviaU
 train_num = 400.0
 
