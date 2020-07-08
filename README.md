@@ -4,7 +4,7 @@
 
 ## parameter
 The data sets and  number of training samples can be selected within the code, such as:
-- DataSetName = 'Indianpines'  # Indianpines  Salinas  PaviaU
+- DataSetName = 'Indianpines'      # Indianpines  Salinas  PaviaU
 - train_num = 400.0
 
 ## Prerequisites
