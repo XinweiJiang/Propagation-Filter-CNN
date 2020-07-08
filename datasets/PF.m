@@ -6,22 +6,22 @@ function [] =  SVMPCAPF(dataSetName, sigma, w, dimen)
     %%%% load the ground truth and the hyperspectral image
     switch dataSetName
         case 'Indianpines' 
-            load('.\Dataset\Indian_pines_corrected.mat');load('.\Dataset\Indian_pines_gt.mat');
+            load('Indian_pines_corrected.mat');load('Indian_pines_gt.mat');
             x = indian_pines_corrected;y = indian_pines_gt;
         case 'KSC'      
-            load('.\Dataset\KSC.mat');load('KSC_gt.mat');
+            load('KSC.mat');load('KSC_gt.mat');
             x = KSC;y = KSC_gt;
         case 'Salinas'    
-            load('.\Dataset\Salinas_corrected.mat');load('.\Dataset\Salinas_gt.mat');
+            load('Salinas_corrected.mat');load('Salinas_gt.mat');
             x = salinas_corrected;y = salinas_gt;
         case 'SalinasA' 
-           load('.\Dataset\SalinasA_corrected.mat');load('.\Dataset\SalinasA_gt.mat');
+           load('SalinasA_corrected.mat');load('SalinasA_gt.mat');
            x = salinasA_corrected; y = salinasA_gt;
         case 'Pavia' 
-           load('.\Dataset\Pavia.mat');load('.\Dataset\Pavia_gt.mat');
+           load('Pavia.mat');load('Pavia_gt.mat');
            x = pavia; y = pavia_gt;
         case 'PaviaU' 
-           load('.\Dataset\PaviaU.mat');load('.\Dataset\PaviaU_gt.mat');
+           load('PaviaU.mat');load('PaviaU_gt.mat');
            x = paviaU; y = paviaU_gt;
         otherwise
             error('Unknown data set requested.');
