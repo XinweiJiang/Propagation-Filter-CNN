@@ -22,7 +22,7 @@ KTF.set_session(session)
 np.set_printoptions(threshold=np.inf)
 
 now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
-DataSetName = 'PaviaU'  # Indianpines  Salinas  PaviaU
+DataSetName = 'Indianpines'  # Indianpines  Salinas  PaviaU
 train_num = 400.0
 save_name = DataSetName + now
 
@@ -100,22 +100,22 @@ def res4_model_ss():
 
 # 根据参数载入数据
 if DataSetName == "Indianpines":
-    mat_data = sio.loadmat('./PF_data/' + DataSetName + '_PF.mat')
+    mat_data = sio.loadmat('./datasets/' + DataSetName + '_PF.mat')
     data_IN = mat_data['fimg']
     mat_gt = sio.loadmat('datasets/Indian_pines_gt.mat')
     gt_IN = mat_gt['indian_pines_gt']
 elif DataSetName == "Salinas":
-    mat_data = sio.loadmat('./PF_data/' + DataSetName + '_PF.mat')
+    mat_data = sio.loadmat('./datasets/' + DataSetName + '_PF.mat')
     data_IN = mat_data['fimg']
     mat_gt = sio.loadmat('datasets/Salinas_gt.mat')
     gt_IN = mat_gt['salinas_gt']
 elif DataSetName == "KSC":
-    mat_data = sio.loadmat('./PF_data/' + DataSetName + '_PF.mat')
+    mat_data = sio.loadmat('./datasets/' + DataSetName + '_PF.mat')
     data_IN = mat_data['fimg']
     mat_gt = sio.loadmat('datasets/KSC_gt.mat')
     gt_IN = mat_gt['KSC_gt']
 elif DataSetName == "PaviaU":
-    mat_data = sio.loadmat('./PF_data/' + DataSetName + '_PF.mat')
+    mat_data = sio.loadmat('./datasets/' + DataSetName + '_PF.mat')
     data_IN = mat_data['fimg']
     mat_gt = sio.loadmat('datasets/PaviaU_gt.mat')
     gt_IN = mat_gt['paviaU_gt']
