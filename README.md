@@ -12,6 +12,9 @@ The data sets and  number of training samples can be selected within the code, s
 - scipy
 - collections
 - sklearn
+- numpy
+- math
+- time
 
 ## Usage:
 - python pf_cnn.py     
