@@ -22,7 +22,7 @@ KTF.set_session(session)
 np.set_printoptions(threshold=np.inf)
 
 now = time.strftime("%Y-%m-%d-%H_%M_%S",time.localtime(time.time())) 
-DataSetName = 'Salinas'      #  Indianpines  Salinas  PaviaU  KSC
+DataSetName = 'Indianpines'      #  Indianpines  Salinas  PaviaU  KSC
 traing_num = 400.0
 save_name = DataSetName + now
 
@@ -97,24 +97,24 @@ def res4_model_ss():
 
 # 根据参数载入数据
 if DataSetName == "Indianpines":
-    mat_data = sio.loadmat('/home/yanqin/dataset/Indian_pines_corrected.mat')
+    mat_data = sio.loadmat('./datasets/Indian_pines_corrected.mat')
     data_IN = mat_data['indian_pines_corrected']
-    mat_gt = sio.loadmat('/home/yanqin/dataset/Indian_pines_gt.mat')
+    mat_gt = sio.loadmat('./datasets/Indian_pines_gt.mat')
     gt_IN = mat_gt['indian_pines_gt']
 elif DataSetName == "Salinas":
-    mat_data = sio.loadmat('/home/yanqin/dataset/Salinas_corrected.mat')
+    mat_data = sio.loadmat('./datasets/Salinas_corrected.mat')
     data_IN = mat_data['salinas_corrected']
-    mat_gt = sio.loadmat('/home/yanqin/dataset/Salinas_gt.mat')
+    mat_gt = sio.loadmat('./datasets/Salinas_gt.mat')
     gt_IN = mat_gt['salinas_gt']
 elif DataSetName == "PaviaU":
-    mat_data = sio.loadmat('/home/yanqin/dataset/PaviaU.mat')
+    mat_data = sio.loadmat('./datasets/PaviaU.mat')
     data_IN = mat_data['paviaU']
-    mat_gt = sio.loadmat('/home/yanqin/dataset/PaviaU_gt.mat')
+    mat_gt = sio.loadmat('./datasets/PaviaU_gt.mat')
     gt_IN = mat_gt['paviaU_gt']
 elif DataSetName == "KSC":
-    mat_data = sio.loadmat('/home/yanqin/dataset/KSC.mat')
+    mat_data = sio.loadmat('./datasets/KSC.mat')
     data_IN = mat_data['KSC']
-    mat_gt = sio.loadmat('/home/yanqin/dataset/KSC_gt.mat')
+    mat_gt = sio.loadmat('./datasets/KSC_gt.mat')
     gt_IN = mat_gt['KSC_gt']
 else:
     print('非法输入')
