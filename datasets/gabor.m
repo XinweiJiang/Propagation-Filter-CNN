@@ -6,43 +6,43 @@ function [ net ] = gabor(dataSetName)
 
 switch dataSetName
   case 'Indianpines' 
-        load('../datasets/Indian_pines_corrected.mat');load('../datasets/Indian_pines_gt.mat');
+        load('Indian_pines_corrected.mat');load('Indian_pines_gt.mat');
         x = indian_pines_corrected;y = indian_pines_gt;
     case 'KSC'      
-        load('../datasets/KSC.mat');load('../datasets/KSC_gt.mat');
+        load('KSC.mat');load('KSC_gt.mat');
         x = KSC;y = KSC_gt;
     case 'Salinas'    
-        load('../datasets/Salinas_corrected.mat');load('../datasets/Salinas_gt.mat');
+        load('Salinas_corrected.mat');load('Salinas_gt.mat');
         x = salinas_corrected;y = salinas_gt;
     case 'SalinasA' 
-     load('../datasets/SalinasA_corrected.mat');load('../datasets/SalinasA_gt.mat');
+     load('SalinasA_corrected.mat');load('SalinasA_gt.mat');
      x = salinasA_corrected; y = salinasA_gt;
     case 'Pavia' 
-     load('../datasets/Pavia.mat');load('../datasets/Pavia_gt.mat');
+     load('Pavia.mat');load('Pavia_gt.mat');
      x = pavia; y = pavia_gt;
     case 'PaviaU' 
-     load('../datasets/PaviaU.mat');load('../datasets/PaviaU_gt.mat');
+     load('PaviaU.mat');load('PaviaU_gt.mat');
      x = paviaU; y = paviaU_gt;
   case 'Botswana'
-        load('../datasets/Botswana.mat');load('../datasets/Botswana_gt.mat');
+        load('Botswana.mat');load('Botswana_gt.mat');
         x = Botswana;y = Botswana_gt;
     case 'Urban4'
-        load('../datasets/Urban_R162.mat');load('../datasets/end4_groundTruth.mat');
+        load('Urban_R162.mat');load('end4_groundTruth.mat');
         Urban = reshape(Y', 307,307,162); [uMax, Urban_gt] =max(A); Urban_gt = reshape(Urban_gt, 307,307);
         Urban_gt(307, 307) = 0;             %to be compatible  with  nClass = size(ind,1)-1; 
         x = Urban;y = Urban_gt;
     case 'Urban5'
-        load('../datasets/Urban_R162.mat');load('../datasets/end5_groundTruth.mat');
+        load('Urban_R162.mat');load('end5_groundTruth.mat');
         Urban = reshape(Y', 307,307,162); [uMax, Urban_gt] =max(A); Urban_gt = reshape(Urban_gt, 307,307);
         Urban_gt(307, 307) = 0;             %to be compatible  with  nClass = size(ind,1)-1; 
         x = Urban;y = Urban_gt;
     case 'Urban6'
-        load('../datasets/Urban_R162.mat');load('../datasets/end6_groundTruth.mat');
+        load('Urban_R162.mat');load('end6_groundTruth.mat');
         Urban = reshape(Y', 307,307,162); [uMax, Urban_gt] =max(A); Urban_gt = reshape(Urban_gt, 307,307);
         Urban_gt(307, 307) = 0;             %to be compatible  with  nClass = size(ind,1)-1; 
         x = Urban;y = Urban_gt;
     case 'Indianpines5' 
-        load('../datasets/ndian_pines_5class.mat');
+        load('Indian_pines_5class.mat');
 %         x = indian_pines_corrected;y = indian_pines_gt;
     case 'Earthquake'
         addpath('E:/History Matching/EarthquakeData');
