@@ -2,7 +2,7 @@
 - Based on zilongzhongzilongzhong/SSRN (https://github.com/zilongzhong/SSRN.git) open source framework
 - Adding pf-cnn， cnn， pca-cnn， gabor-cnn， emp-cnn code (all the cnns have the same structure), Some codes need to obtain MATLAB filtered data in advance
 
-## parameter
+## Parameter
 The data sets and  number of training samples can be selected within the code, such as:
 - DataSetName = 'Indianpines'      # Indianpines  Salinas  PaviaU
 - train_num = 400.0
