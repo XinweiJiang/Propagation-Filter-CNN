@@ -7,7 +7,7 @@ import keras.callbacks as kcallbacks
 import time
 import math
 from pca import myPCA
-from sendtoWeChat import sendMsg
+# from sendtoWeChat import sendMsg
 import collections
 from sklearn import metrics, preprocessing
 from Utils import averageAccuracy
