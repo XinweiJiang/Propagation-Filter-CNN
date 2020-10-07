@@ -8,7 +8,7 @@ The data sets and  number of training samples can be selected within the code, s
 - train_num = 400.0
 
 ## Prerequisites:
-use environment.yml to build environment
+Use environment.yml to build environment
 - TensorFlow-gpu 1.13.1 + Keras 2.2.4 on Python 3.6.
 - scipy
 - collections
